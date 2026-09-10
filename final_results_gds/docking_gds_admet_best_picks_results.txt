@@ -1,0 +1,100 @@
+
+
+(base) maksym@maksym-HP-255-15-6-inch-G9-Notebook-PC:~/lupinus/final_results_src$ /home/maksym/anaconda3/bin/python /home/maksym/lupinus/final_results_src/docking_gds_admet_best_picks.py
+
+======================================================================
+EXHAUSTIVENESS_8
+======================================================================
+
+ACE-I (n = 108):
+  Binding energy range (all docked): -9.2 to -5.3 kcal/mol
+  GI stability breakdown of docked peptides:
+    Dual Resistant      :   29 / 108 (26.85%)
+    GID (pH 1.3) only   :   44 / 108 (40.74%)
+    GID (pH > 2) only   :    0 / 108 (0.0%)
+    Not Resistant       :   35 / 108 (32.41%)
+  Dual-resistant + optimal ADMET: 17.59% (n = 19), binding energy range -7.5 to -5.8 kcal/mol
+
+  Top 10 candidates by binding energy:
+  Sequence     Affinity  Optimal ADMET  GI stability type
+  VRF              -9.2  No             Not Resistant
+  YPR              -9.1  No             Not Resistant
+  WMY              -9.1  No             Not Resistant
+  IAY              -8.7  No             GID (pH 1.3) only
+  IVF              -8.6  No             GID (pH 1.3) only
+  RY               -8.5  No             Not Resistant
+  VEF              -8.5  No             GID (pH 1.3) only
+  VAF              -8.4  Yes            GID (pH 1.3) only
+  YNL              -8.4  No             Not Resistant
+  VVF              -8.4  Yes            GID (pH 1.3) only
+
+DPP-IV (n = 132):
+  Binding energy range (all docked): -8.4 to -5.2 kcal/mol
+  GI stability breakdown of docked peptides:
+    Dual Resistant      :   34 / 132 (25.76%)
+    GID (pH 1.3) only   :   47 / 132 (35.61%)
+    GID (pH > 2) only   :    0 / 132 (0.0%)
+    Not Resistant       :   51 / 132 (38.64%)
+  Dual-resistant + optimal ADMET: 18.94% (n = 25), binding energy range -7.1 to -5.5 kcal/mol
+
+  Top 10 candidates by binding energy:
+  Sequence     Affinity  Optimal ADMET  GI stability type
+  EYF              -8.4  No             Not Resistant
+  WF               -8.3  No             Not Resistant
+  HW               -8.0  No             Not Resistant
+  WV               -7.9  No             Not Resistant
+  NH               -7.8  No             Not Resistant
+  HF               -7.7  No             Not Resistant
+  AY               -7.6  No             GID (pH 1.3) only
+  GW               -7.5  No             GID (pH 1.3) only
+  EY               -7.5  No             GID (pH 1.3) only
+  VW               -7.5  No             Dual Resistant
+
+======================================================================
+EXHAUSTIVENESS_32
+======================================================================
+
+ACE-I (n = 107):
+  Binding energy range (all docked): -9.2 to -5.3 kcal/mol
+  GI stability breakdown of docked peptides:
+    Dual Resistant      :   31 / 107 (28.97%)
+    GID (pH 1.3) only   :   43 / 107 (40.19%)
+    GID (pH > 2) only   :    0 / 107 (0.0%)
+    Not Resistant       :   33 / 107 (30.84%)
+  Dual-resistant + optimal ADMET: 18.69% (n = 20), binding energy range -7.8 to -5.8 kcal/mol
+
+  Top 10 candidates by binding energy:
+  Sequence     Affinity  Optimal ADMET  GI stability type
+  VRF              -9.2  No             Not Resistant
+  WMY              -9.0  No             Not Resistant
+  VEF              -8.7  No             GID (pH 1.3) only
+  YPR              -8.7  No             Not Resistant
+  TKY              -8.5  No             Not Resistant
+  IAY              -8.5  No             GID (pH 1.3) only
+  IVF              -8.5  No             GID (pH 1.3) only
+  VAF              -8.4  Yes            GID (pH 1.3) only
+  DF               -8.4  No             GID (pH 1.3) only
+  VVF              -8.4  Yes            GID (pH 1.3) only
+
+DPP-IV (n = 133):
+  Binding energy range (all docked): -8.5 to -5.3 kcal/mol
+  GI stability breakdown of docked peptides:
+    Dual Resistant      :   38 / 133 (28.57%)
+    GID (pH 1.3) only   :   48 / 133 (36.09%)
+    GID (pH > 2) only   :    0 / 133 (0.0%)
+    Not Resistant       :   47 / 133 (35.34%)
+  Dual-resistant + optimal ADMET: 21.8% (n = 29), binding energy range -7.2 to -5.4 kcal/mol
+
+  Top 10 candidates by binding energy:
+  Sequence     Affinity  Optimal ADMET  GI stability type
+  WQ               -8.5  Yes            Not Resistant
+  EYF              -8.4  No             Not Resistant
+  HW               -8.2  No             Not Resistant
+  WF               -7.9  No             Not Resistant
+  WR               -7.8  No             Not Resistant
+  NH               -7.8  No             Not Resistant
+  AF               -7.7  No             GID (pH 1.3) only
+  YF               -7.7  No             Not Resistant
+  HF               -7.7  No             Not Resistant
+  AY               -7.6  No             GID (pH 1.3) only
+(base) maksym@maksym-HP-255-15-6-inch-G9-Notebook-PC:~/lupinus/final_results

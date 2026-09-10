@@ -1,0 +1,13 @@
+(base) maksym@maksym-HP-255-15-6-inch-G9-Notebook-PC:~/lupinus/ADMET_src$ /home/maksym/anaconda3/bin/python /home/maksym/lupinus/ADMET_src/admet_actiivty_gds_extended.py
+==== OVERALL SUMMARY ====
+Total unique starting peptides:                  206
+Target Activity starting peptides:             206
+Passed Bioavailability (>0.7) & ClinTox (<0.3): 71
+
+==== GDS RESISTANCE BREAKDOWN (INFORMATIONAL) ====
+GID_Resistance_Type
+pH 1.3 only               30
+Both (pH 1.3 & pH > 2)    24
+Not Resistant             17
+
+Saved successfully to: /home/maksym/lupinus/ADMET_results/optimal_admet_gds.csv

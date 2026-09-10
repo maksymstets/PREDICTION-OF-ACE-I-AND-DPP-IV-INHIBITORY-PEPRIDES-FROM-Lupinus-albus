@@ -1,0 +1,66 @@
+
+  
+  (base) maksym@maksym-HP-255-15-6-inch-G9-Notebook-PC:~/lupinus/final_results_src$ /home/maksym/anaconda3/bin/python /home/maksym/lupinus/final_results_src/exhaustiveness_comparison.py
+======================================================================
+DOCKING COMPARISON: exhaustiveness=8 vs exhaustiveness=32
+======================================================================
+
+------------------------------------------------------------
+ACE-I
+------------------------------------------------------------
+Docked at exhaustiveness=8:  n = 108, range = -9.2 to -5.3 kcal/mol
+Docked at exhaustiveness=32: n = 107, range = -9.2 to -5.3 kcal/mol
+  NOTE: 8 peptide(s) docked at ex=8 only (missing from ex=32): ['AF', 'DR', 'GY', 'IR', 'KA', 'KG', 'RG', 'YV']
+  NOTE: 7 peptide(s) docked at ex=32 only (missing from ex=8): ['AV', 'EY', 'HL', 'PH', 'PT', 'VK', 'WV']
+
+Per-peptide difference (ex32 - ex8), n = 100 peptides in both runs:
+  Mean delta   : -0.069 kcal/mol
+  Std delta    : 0.302 kcal/mol
+  Min delta    : -1.107 kcal/mol (SF)
+  Max delta    : +0.745 kcal/mol (MY)
+  Peptides with |delta| < 0.1 kcal/mol (essentially unchanged): 29 / 100 (29.0%)
+
+Top 10 candidates (strongest binders):
+  Overlap between ex=8 and ex=32: 8 / 10 peptides: ['IAY', 'IVF', 'VAF', 'VEF', 'VRF', 'VVF', 'WMY', 'YPR']
+  In top 10 at ex=8 only: ['RY', 'YNL']
+  In top 10 at ex=32 only: ['DF', 'TKY']
+
+Best single candidate at ex=8:  VRF (-9.2 kcal/mol)
+Best single candidate at ex=32: VRF (-9.2 kcal/mol)
+  Same peptide is #1 in both runs: YES
+
+Peptides matching/outperforming Lisinopril (-8.6 kcal/mol):
+  ex=8 : 5 / 108 (4.6%)
+  ex=32: 4 / 107 (3.7%)
+
+------------------------------------------------------------
+DPP-IV
+------------------------------------------------------------
+Docked at exhaustiveness=8:  n = 132, range = -8.4 to -5.2 kcal/mol
+Docked at exhaustiveness=32: n = 133, range = -8.5 to -5.3 kcal/mol
+  NOTE: 14 peptide(s) docked at ex=8 only (missing from ex=32): ['AG', 'GF', 'GPM', 'HL', 'IPA', 'KY', 'NF', 'NY', 'QP', 'RA', 'VW', 'WL', 'WM', 'WV']
+  NOTE: 15 peptide(s) docked at ex=32 only (missing from ex=8): ['AP', 'DR', 'GY', 'IA', 'IR', 'MF', 'RG', 'SF', 'TF', 'TQ', 'VE', 'VF', 'VM', 'YG', 'YS']
+
+Per-peptide difference (ex32 - ex8), n = 118 peptides in both runs:
+  Mean delta   : -0.211 kcal/mol
+  Std delta    : 0.406 kcal/mol
+  Min delta    : -1.407 kcal/mol (ET)
+  Max delta    : +0.745 kcal/mol (VK)
+  Peptides with |delta| < 0.1 kcal/mol (essentially unchanged): 34 / 118 (28.8%)
+
+Top 10 candidates (strongest binders):
+  Overlap between ex=8 and ex=32: 6 / 10 peptides: ['AY', 'EYF', 'HF', 'HW', 'NH', 'WF']
+  In top 10 at ex=8 only: ['EY', 'GW', 'VW', 'WV']
+  In top 10 at ex=32 only: ['AF', 'WQ', 'WR', 'YF']
+
+Best single candidate at ex=8:  EYF (-8.4 kcal/mol)
+Best single candidate at ex=32: WQ (-8.5 kcal/mol)
+  Same peptide is #1 in both runs: NO
+
+Peptides matching/outperforming Saxagliptin (-8.4 kcal/mol):
+  ex=8 : 0 / 132 (0.0%)
+  ex=32: 2 / 133 (1.5%)
+
+Peptides matching/outperforming Vildagliptin (-8.8 kcal/mol):
+  ex=8 : 0 / 132 (0.0%)
+  ex=32: 0 / 133 (0.0%)

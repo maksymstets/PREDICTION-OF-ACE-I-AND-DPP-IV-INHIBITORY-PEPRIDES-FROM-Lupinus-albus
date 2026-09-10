@@ -1,0 +1,20 @@
+(base) maksym@maksym-HP-255-15-6-inch-G9-Notebook-PC:~/lupinus/Docking_src$ /home/maksym/anaconda3/bin/python /home/maksym/lupinus/Docking_src/sdf_to_pdbqt.py
+Beginning batch preparation of peptides...
+/home/maksym/anaconda3/lib/python3.13/site-packages/meeko/preparation.py:693: DeprecationWarning: MoleculePreparation.write_pdbqt_string() is deprecated in Meeko v0.5. Pass the MoleculeSetup instance to PDBQTWriterLegacy.write_string(). MoleculePreparation.prepare() returns a list of MoleculeSetup instances.
+  warnings.warn(msg, DeprecationWarning)
+/home/maksym/anaconda3/lib/python3.13/site-packages/meeko/preparation.py:467: DeprecationWarning: MoleculePreparation.setup is deprecated in Meeko v0.5. MoleculePreparation.prepare() returns a list of MoleculeSetup instances.
+  warnings.warn(msg, DeprecationWarning)
+
+Done! Converted 204 peptides to .pdbqt
+Breakdown by Location:
+Location
+DPP_only_pdbqt      86
+Dual                69
+ACE_only_pdbqt      49
+no_sdf_available     2
+
+Skipped (no SDF available): 2
+Unrecognized activity pattern: 0
+Conversion errors: 0
+
+Summary CSV with Location column saved to /home/maksym/lupinus/Docking_inputs/pdbqt_structures.csv

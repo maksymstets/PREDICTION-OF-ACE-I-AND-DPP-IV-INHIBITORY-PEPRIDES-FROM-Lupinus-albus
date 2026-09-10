@@ -1,0 +1,436 @@
+(base) maksym@maksym-HP-255-15-6-inch-G9-Notebook-PC:~/lupinus$  chimerax --nogui batch_pocket_distances.py
+UCSF ChimeraX version: 1.12 (2026-06-12)
+© 2016-2026 Regents of the University of California.  All rights reserved.
+Executing: open batch_pocket_distances.py
+[OpenBabel] Converted: 10692_VRF_out.pdbqt -> VRF_mod1.pdb
+[OpenBabel] Converted: 10025_WMY_out.pdbqt -> WMY_mod1.pdb
+[OpenBabel] Converted: 10703_VEF_out.pdbqt -> VEF_mod1.pdb
+[OpenBabel] Converted: 3535_YPR_out.pdbqt -> YPR_mod1.pdb
+[OpenBabel] Converted: 9057_TKY_out.pdbqt -> TKY_mod1.pdb
+[OpenBabel] Converted: 9071_IAY_out.pdbqt -> IAY_mod1.pdb
+[OpenBabel] Converted: 8508_IVF_out.pdbqt -> IVF_mod1.pdb
+[OpenBabel] Converted: 8126_VAF_out.pdbqt -> VAF_mod1.pdb
+[OpenBabel] Converted: 9074_DF_out.pdbqt -> DF_mod1.pdb
+[OpenBabel] Converted: 9044_VVF_out.pdbqt -> VVF_mod1.pdb
+Executing: close all
+Executing: open /home/maksym/lupinus/1O86.cif/1o86.cif
+_1o86.cif_ title:  
+**Crystal Structure of Human Angiotensin Converting Enzyme in complex with
+lisinopril.** [[more info...]](cxcmd:log metadata #1)  
+  
+
+Chain information for 1o86.cif #1  
+---  
+Chain | Description | UniProt  
+[A](cxcmd:select /A:40-618 "Select chain") | [ANGIOTENSIN CONVERTING ENZYME](cxcmd:sequence chain #1/A "Show sequence") | [ACET_HUMAN](cxcmd:open P22966 from uniprot associate #1/A "Show annotations") [37-625](cxcmd:select #1/A:37-625 "Select sequence")  
+  
+
+Non-standard residues in 1o86.cif #1  
+---  
+[CL](cxcmd:sel :CL "select residue") — [chloride
+ion](https://www.rcsb.org/ligand/CL "show residue info")  
+[GLY](cxcmd:sel :GLY "select residue") —
+[glycine](https://www.rcsb.org/ligand/GLY "show residue info")  
+[LPR](cxcmd:sel :LPR "select residue") —
+[[N2-[(S)-1-carboxy-3-phenylpropyl]-L-lysyl-L-
+proline](https://www.rcsb.org/ligand/LPR "show residue info") (lisinopril)  
+[ZN](cxcmd:sel :ZN "select residue") — [zinc
+ion](https://www.rcsb.org/ligand/ZN "show residue info")  
+  
+
+
+==========================================================
+ ANALYSIS FOR PEPTIDE: VRF (VRF_mod1.pdb)
+==========================================================
+Executing: open /home/maksym/lupinus/dock_res_2run/ACE_results/VRF_mod1.pdb
+Summary of feedback from opening
+/home/maksym/lupinus/dock_res_2run/ACE_results/VRF_mod1.pdb  
+---  
+_warnings_ | Ignored bad PDB record found on line 2  
+REMARK VINA RESULT: -9.168 0.000 0.000  
+  
+Ignored bad PDB record found on line 3  
+REMARK INTER + INTRA: -17.671  
+  
+Ignored bad PDB record found on line 4  
+REMARK INTER: -15.589  
+  
+Ignored bad PDB record found on line 5  
+REMARK INTRA: -2.082  
+  
+Ignored bad PDB record found on line 6  
+REMARK UNBOUND: -1.536  
+  
+5 messages similar to the above omitted  
+  
+
+Pocket Residue    VRF dist (Å)   LPR dist (Å)  
+----------------------------------------------------
+S1     ALA354    3.35           2.92          
+S1     GLU384    3.62           2.70          
+S1     TYR523    2.33           2.77          
+S2     GLN281    2.99           3.22          
+S2     HIS353    3.16           2.76          
+S2     LYS511    4.27           2.93          
+S2     HIS513    3.21           3.06          
+S2     TYR520    5.35           2.56          
+S1'    GLN162    2.65           3.45          
+Zn     cofactor   2.56           2.14          
+Executing: close #2
+
+==========================================================
+ ANALYSIS FOR PEPTIDE: WMY (WMY_mod1.pdb)
+==========================================================
+Executing: open /home/maksym/lupinus/dock_res_2run/ACE_results/WMY_mod1.pdb
+Summary of feedback from opening
+/home/maksym/lupinus/dock_res_2run/ACE_results/WMY_mod1.pdb  
+---  
+_warnings_ | Ignored bad PDB record found on line 2  
+REMARK VINA RESULT: -9.040 0.000 0.000  
+  
+Ignored bad PDB record found on line 3  
+REMARK INTER + INTRA: -18.500  
+  
+Ignored bad PDB record found on line 4  
+REMARK INTER: -15.408  
+  
+Ignored bad PDB record found on line 5  
+REMARK INTRA: -3.092  
+  
+Ignored bad PDB record found on line 6  
+REMARK UNBOUND: -2.326  
+  
+6 messages similar to the above omitted  
+  
+
+Pocket Residue    WMY dist (Å)   LPR dist (Å)  
+----------------------------------------------------
+S1     ALA354    2.89           2.92          
+S1     GLU384    3.46           2.70          
+S1     TYR523    3.99           2.77          
+S2     GLN281    3.04           3.22          
+S2     HIS353    2.62           2.76          
+S2     LYS511    4.06           2.93          
+S2     HIS513    3.56           3.06          
+S2     TYR520    4.69           2.56          
+S1'    GLN162    3.37           3.45          
+Zn     cofactor   4.71           2.14          
+Executing: close #2
+
+==========================================================
+ ANALYSIS FOR PEPTIDE: VEF (VEF_mod1.pdb)
+==========================================================
+Executing: open /home/maksym/lupinus/dock_res_2run/ACE_results/VEF_mod1.pdb
+Summary of feedback from opening
+/home/maksym/lupinus/dock_res_2run/ACE_results/VEF_mod1.pdb  
+---  
+_warnings_ | Ignored bad PDB record found on line 2  
+REMARK VINA RESULT: -8.739 0.000 0.000  
+  
+Ignored bad PDB record found on line 3  
+REMARK INTER + INTRA: -16.531  
+  
+Ignored bad PDB record found on line 4  
+REMARK INTER: -15.582  
+  
+Ignored bad PDB record found on line 5  
+REMARK INTRA: -0.949  
+  
+Ignored bad PDB record found on line 6  
+REMARK UNBOUND: -1.406  
+  
+5 messages similar to the above omitted  
+  
+
+Pocket Residue    VEF dist (Å)   LPR dist (Å)  
+----------------------------------------------------
+S1     ALA354    2.46           2.92          
+S1     GLU384    2.52           2.70          
+S1     TYR523    2.89           2.77          
+S2     GLN281    3.04           3.22          
+S2     HIS353    3.11           2.76          
+S2     LYS511    2.80           2.93          
+S2     HIS513    3.01           3.06          
+S2     TYR520    2.91           2.56          
+S1'    GLN162    4.84           3.45          
+Zn     cofactor   2.20           2.14          
+Executing: close #2
+
+==========================================================
+ ANALYSIS FOR PEPTIDE: YPR (YPR_mod1.pdb)
+==========================================================
+Executing: open /home/maksym/lupinus/dock_res_2run/ACE_results/YPR_mod1.pdb
+Summary of feedback from opening
+/home/maksym/lupinus/dock_res_2run/ACE_results/YPR_mod1.pdb  
+---  
+_warnings_ | Ignored bad PDB record found on line 2  
+REMARK VINA RESULT: -8.715 0.000 0.000  
+  
+Ignored bad PDB record found on line 3  
+REMARK INTER + INTRA: -16.801  
+  
+Ignored bad PDB record found on line 4  
+REMARK INTER: -15.882  
+  
+Ignored bad PDB record found on line 5  
+REMARK INTRA: -0.920  
+  
+Ignored bad PDB record found on line 6  
+REMARK UNBOUND: -1.718  
+  
+5 messages similar to the above omitted  
+  
+
+Pocket Residue    YPR dist (Å)   LPR dist (Å)  
+----------------------------------------------------
+S1     ALA354    2.93           2.92          
+S1     GLU384    3.59           2.70          
+S1     TYR523    3.37           2.77          
+S2     GLN281    3.05           3.22          
+S2     HIS353    2.69           2.76          
+S2     LYS511    3.37           2.93          
+S2     HIS513    2.54           3.06          
+S2     TYR520    1.84           2.56          
+S1'    GLN162    2.77           3.45          
+Zn     cofactor   4.66           2.14          
+Executing: close #2
+
+==========================================================
+ ANALYSIS FOR PEPTIDE: TKY (TKY_mod1.pdb)
+==========================================================
+Executing: open /home/maksym/lupinus/dock_res_2run/ACE_results/TKY_mod1.pdb
+Summary of feedback from opening
+/home/maksym/lupinus/dock_res_2run/ACE_results/TKY_mod1.pdb  
+---  
+_warnings_ | Ignored bad PDB record found on line 2  
+REMARK VINA RESULT: -8.531 0.000 0.000  
+  
+Ignored bad PDB record found on line 3  
+REMARK INTER + INTRA: -17.605  
+  
+Ignored bad PDB record found on line 4  
+REMARK INTER: -16.145  
+  
+Ignored bad PDB record found on line 5  
+REMARK INTRA: -1.460  
+  
+Ignored bad PDB record found on line 6  
+REMARK UNBOUND: -1.843  
+  
+5 messages similar to the above omitted  
+  
+
+Pocket Residue    TKY dist (Å)   LPR dist (Å)  
+----------------------------------------------------
+S1     ALA354    2.53           2.92          
+S1     GLU384    3.08           2.70          
+S1     TYR523    2.45           2.77          
+S2     GLN281    3.00           3.22          
+S2     HIS353    3.16           2.76          
+S2     LYS511    2.80           2.93          
+S2     HIS513    2.90           3.06          
+S2     TYR520    1.88           2.56          
+S1'    GLN162    3.22           3.45          
+Zn     cofactor   2.22           2.14          
+Executing: close #2
+
+==========================================================
+ ANALYSIS FOR PEPTIDE: IAY (IAY_mod1.pdb)
+==========================================================
+Executing: open /home/maksym/lupinus/dock_res_2run/ACE_results/IAY_mod1.pdb
+Summary of feedback from opening
+/home/maksym/lupinus/dock_res_2run/ACE_results/IAY_mod1.pdb  
+---  
+_warnings_ | Ignored bad PDB record found on line 2  
+REMARK VINA RESULT: -8.474 0.000 0.000  
+  
+Ignored bad PDB record found on line 3  
+REMARK INTER + INTRA: -14.962  
+  
+Ignored bad PDB record found on line 4  
+REMARK INTER: -14.506  
+  
+Ignored bad PDB record found on line 5  
+REMARK INTRA: -0.456  
+  
+Ignored bad PDB record found on line 6  
+REMARK UNBOUND: -1.286  
+  
+5 messages similar to the above omitted  
+  
+
+Pocket Residue    IAY dist (Å)   LPR dist (Å)  
+----------------------------------------------------
+S1     ALA354    2.45           2.92          
+S1     GLU384    2.92           2.70          
+S1     TYR523    2.84           2.77          
+S2     GLN281    2.17           3.22          
+S2     HIS353    3.13           2.76          
+S2     LYS511    2.24           2.93          
+S2     HIS513    2.90           3.06          
+S2     TYR520    2.79           2.56          
+S1'    GLN162    7.86           3.45          
+Zn     cofactor   2.20           2.14          
+Executing: close #2
+
+==========================================================
+ ANALYSIS FOR PEPTIDE: IVF (IVF_mod1.pdb)
+==========================================================
+Executing: open /home/maksym/lupinus/dock_res_2run/ACE_results/IVF_mod1.pdb
+Summary of feedback from opening
+/home/maksym/lupinus/dock_res_2run/ACE_results/IVF_mod1.pdb  
+---  
+_warnings_ | Ignored bad PDB record found on line 2  
+REMARK VINA RESULT: -8.465 0.000 0.000  
+  
+Ignored bad PDB record found on line 3  
+REMARK INTER + INTRA: -15.668  
+  
+Ignored bad PDB record found on line 4  
+REMARK INTER: -14.994  
+  
+Ignored bad PDB record found on line 5  
+REMARK INTRA: -0.674  
+  
+Ignored bad PDB record found on line 6  
+REMARK UNBOUND: -1.761  
+  
+5 messages similar to the above omitted  
+  
+
+Pocket Residue    IVF dist (Å)   LPR dist (Å)  
+----------------------------------------------------
+S1     ALA354    2.42           2.92          
+S1     GLU384    2.27           2.70          
+S1     TYR523    2.85           2.77          
+S2     GLN281    2.17           3.22          
+S2     HIS353    2.93           2.76          
+S2     LYS511    2.27           2.93          
+S2     HIS513    3.09           3.06          
+S2     TYR520    2.73           2.56          
+S1'    GLN162    6.77           3.45          
+Zn     cofactor   2.20           2.14          
+Executing: close #2
+
+==========================================================
+ ANALYSIS FOR PEPTIDE: VAF (VAF_mod1.pdb)
+==========================================================
+Executing: open /home/maksym/lupinus/dock_res_2run/ACE_results/VAF_mod1.pdb
+Summary of feedback from opening
+/home/maksym/lupinus/dock_res_2run/ACE_results/VAF_mod1.pdb  
+---  
+_warnings_ | Ignored bad PDB record found on line 2  
+REMARK VINA RESULT: -8.436 0.000 0.000  
+  
+Ignored bad PDB record found on line 3  
+REMARK INTER + INTRA: -13.854  
+  
+Ignored bad PDB record found on line 4  
+REMARK INTER: -13.572  
+  
+Ignored bad PDB record found on line 5  
+REMARK INTRA: -0.282  
+  
+Ignored bad PDB record found on line 6  
+REMARK UNBOUND: -0.979  
+  
+5 messages similar to the above omitted  
+  
+
+Pocket Residue    VAF dist (Å)   LPR dist (Å)  
+----------------------------------------------------
+S1     ALA354    2.32           2.92          
+S1     GLU384    2.56           2.70          
+S1     TYR523    2.84           2.77          
+S2     GLN281    2.85           3.22          
+S2     HIS353    3.03           2.76          
+S2     LYS511    2.27           2.93          
+S2     HIS513    2.89           3.06          
+S2     TYR520    2.71           2.56          
+S1'    GLN162    7.52           3.45          
+Zn     cofactor   2.20           2.14          
+Executing: close #2
+
+==========================================================
+ ANALYSIS FOR PEPTIDE: DF (DF_mod1.pdb)
+==========================================================
+Executing: open /home/maksym/lupinus/dock_res_2run/ACE_results/DF_mod1.pdb
+Summary of feedback from opening
+/home/maksym/lupinus/dock_res_2run/ACE_results/DF_mod1.pdb  
+---  
+_warnings_ | Ignored bad PDB record found on line 2  
+REMARK VINA RESULT: -8.424 0.000 0.000  
+  
+Ignored bad PDB record found on line 3  
+REMARK INTER + INTRA: -13.431  
+  
+Ignored bad PDB record found on line 4  
+REMARK INTER: -12.240  
+  
+Ignored bad PDB record found on line 5  
+REMARK INTRA: -1.191  
+  
+Ignored bad PDB record found on line 6  
+REMARK UNBOUND: -0.822  
+  
+4 messages similar to the above omitted  
+  
+
+Pocket Residue    DF dist (Å)    LPR dist (Å)  
+----------------------------------------------------
+S1     ALA354    2.28           2.92          
+S1     GLU384    2.20           2.70          
+S1     TYR523    2.90           2.77          
+S2     GLN281    4.41           3.22          
+S2     HIS353    2.99           2.76          
+S2     LYS511    5.03           2.93          
+S2     HIS513    3.04           3.06          
+S2     TYR520    3.37           2.56          
+S1'    GLN162    6.23           3.45          
+Zn     cofactor   1.31           2.14          
+Executing: close #2
+
+==========================================================
+ ANALYSIS FOR PEPTIDE: VVF (VVF_mod1.pdb)
+==========================================================
+Executing: open /home/maksym/lupinus/dock_res_2run/ACE_results/VVF_mod1.pdb
+Summary of feedback from opening
+/home/maksym/lupinus/dock_res_2run/ACE_results/VVF_mod1.pdb  
+---  
+_warnings_ | Ignored bad PDB record found on line 2  
+REMARK VINA RESULT: -8.399 0.000 0.000  
+  
+Ignored bad PDB record found on line 3  
+REMARK INTER + INTRA: -15.232  
+  
+Ignored bad PDB record found on line 4  
+REMARK INTER: -14.641  
+  
+Ignored bad PDB record found on line 5  
+REMARK INTRA: -0.591  
+  
+Ignored bad PDB record found on line 6  
+REMARK UNBOUND: -1.923  
+  
+5 messages similar to the above omitted  
+  
+
+Pocket Residue    VVF dist (Å)   LPR dist (Å)  
+----------------------------------------------------
+S1     ALA354    2.42           2.92          
+S1     GLU384    2.22           2.70          
+S1     TYR523    2.86           2.77          
+S2     GLN281    3.03           3.22          
+S2     HIS353    2.96           2.76          
+S2     LYS511    2.38           2.93          
+S2     HIS513    2.85           3.06          
+S2     TYR520    2.74           2.56          
+S1'    GLN162    6.75           3.45          
+Zn     cofactor   2.20           2.14          
+Executing: close #2
+executed batch_pocket_distances.py
+executed batch_pocket_distances.py
+cmd> ^C
+(base) maksym@maksym-HP-255-15-6-inch-G9-Notebook-PC:~/lupinus$ 
+
+

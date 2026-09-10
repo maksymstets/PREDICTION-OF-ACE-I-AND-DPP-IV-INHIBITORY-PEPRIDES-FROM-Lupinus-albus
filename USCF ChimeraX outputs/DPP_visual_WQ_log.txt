@@ -1,0 +1,628 @@
+UCSF ChimeraX version: 1.12 (2026-06-12)
+© 2016-2026 Regents of the University of California. All rights reserved.
+How to cite UCSF ChimeraX
+open /home/maksym/lupinus/1O86.cif/1o86.cif format mmcif
+1o86.cif title:
+Crystal Structure of Human Angiotensin Converting Enzyme in complex with lisinopril. [more info...]
+
+Chain information for 1o86.cif #1
+Chain	Description	UniProt
+A	ANGIOTENSIN CONVERTING ENZYME	ACET_HUMAN 37-625
+
+Non-standard residues in 1o86.cif #1
+CL — chloride ion
+GLY — glycine
+LPR — [N2-[(S)-1-carboxy-3-phenylpropyl]-L-lysyl-L-proline (lisinopril)
+ZN — zinc ion
+
+open /home/maksym/lupinus/dock_res_2run/ACE_pdb/VAF_mod1.pdb
+Summary of feedback from opening /home/maksym/lupinus/dock_res_2run/ACE_pdb/VAF_mod1.pdb
+warnings	Ignored bad PDB record found on line 2
+REMARK VINA RESULT: -8.436 0.000 0.000
+
+Ignored bad PDB record found on line 3
+REMARK INTER + INTRA: -13.854
+
+Ignored bad PDB record found on line 4
+REMARK INTER: -13.572
+
+Ignored bad PDB record found on line 5
+REMARK INTRA: -0.282
+
+Ignored bad PDB record found on line 6
+REMARK UNBOUND: -0.979
+
+5 messages similar to the above omitted
+
+select #2
+29 atoms, 29 bonds, 1 residue, 1 model selected
+color #1/A:LPR yellow
+delete :LPR
+bonds #peptide restrict #receptor reveal true
+Unknown command: bonds #peptide restrict #receptor reveal true
+hbonds #peptide restrict #receptor reveal true
+Expected a keyword
+findhbond intermodel true restriction #0,#1 log true saveFile ~/Desktop/hbonds_list.txt
+Unknown command: findhbond intermodel true restriction #0,#1 log true saveFile ~/Desktop/hbonds_list.txt
+findhbond #0,#1 intermodel true intramodel false log true saveFile ~/Desktop/hbonds_list.txt
+Unknown command: findhbond #0,#1 intermodel true intramodel false log true saveFile ~/Desktop/hbonds_list.txt
+hbonds #1,#2 intermodel true intramodel false log true saveFile ~/Desktop/hbonds_list.txt
+Expected a keyword
+hbonds #1 restrict #2 cross true log true saveFile ~/Desktop/hbonds_list.txt
+Expected a keyword
+hbonds #1 restrict #2 reveal true log true saveFile /home/maksym/Desktop/hbonds_list.txt
+The following atoms were skipped as donors/acceptors due to missing heavy-atom bond partners: 1o86.cif #1/A GLN 618 N
+
+Finding intermodel H-bonds
+Finding intramodel H-bonds
+Constraints relaxed by 0.4 angstroms and 20 degrees
+Models used:
+	2 VAF_mod1.pdb
+	1 1o86.cif
+
+10 H-bonds
+H-bonds (donor, acceptor, hydrogen, D..A dist, D-H..A dist):
+1o86.cif #1/A GLN 281 NE2  VAF_mod1.pdb #2/? UNL 1 O  no hydrogen                2.849  N/A
+1o86.cif #1/A HIS 353 NE2  VAF_mod1.pdb #2/? UNL 1 O  no hydrogen                3.028  N/A
+1o86.cif #1/A LYS 511 NZ   VAF_mod1.pdb #2/? UNL 1 O  no hydrogen                2.796  N/A
+1o86.cif #1/A HIS 513 NE2  VAF_mod1.pdb #2/? UNL 1 O  no hydrogen                2.888  N/A
+1o86.cif #1/A TYR 520 OH   VAF_mod1.pdb #2/? UNL 1 O  no hydrogen                2.705  N/A
+1o86.cif #1/A TYR 523 OH   VAF_mod1.pdb #2/? UNL 1 O  no hydrogen                2.838  N/A
+1o86.cif #1/A HOH 2409 O   VAF_mod1.pdb #2/? UNL 1 O  no hydrogen                3.610  N/A
+1o86.cif #1/A HOH 2568 O   VAF_mod1.pdb #2/? UNL 1 O  no hydrogen                2.763  N/A
+1o86.cif #1/A HOH 2569 O   VAF_mod1.pdb #2/? UNL 1 O  no hydrogen                2.696  N/A
+VAF_mod1.pdb #2/? UNL 1 N  1o86.cif #1/A ALA 354 O    VAF_mod1.pdb #2/? UNL 1 H  3.310  2.318
+
+10 hydrogen bonds found
+contacts #1 restrict #2 distanceOnly 4.0 reveal true log true saveFile /home/maksym/Desktop/electro_contacts.txt
+Ignore distances between atoms separated by 4 bonds or less
+Detect intra-residue distances: False
+Detect intra-molecule distances: True
+
+167 distances
+          atom1                      atom2            distance
+1o86.cif #1/A HOH 2570 O   VAF_mod1.pdb #2/? UNL 1 H    0.969
+1o86.cif #1/A HOH 2570 O   VAF_mod1.pdb #2/? UNL 1 H    1.032
+1o86.cif #1/A HOH 2570 O   VAF_mod1.pdb #2/? UNL 1 N    1.188
+1o86.cif #1/A GLY 2000 CA  VAF_mod1.pdb #2/? UNL 1 C    1.637
+1o86.cif #1/A GLY 2000 N   VAF_mod1.pdb #2/? UNL 1 C    2.198
+1o86.cif #1/A ZN 701 ZN    VAF_mod1.pdb #2/? UNL 1 O    2.202
+1o86.cif #1/A LYS 511 NZ   VAF_mod1.pdb #2/? UNL 1 H    2.272
+1o86.cif #1/A GLY 2000 C   VAF_mod1.pdb #2/? UNL 1 C    2.309
+1o86.cif #1/A ALA 354 O    VAF_mod1.pdb #2/? UNL 1 H    2.318
+1o86.cif #1/A HOH 2570 O   VAF_mod1.pdb #2/? UNL 1 C    2.402
+1o86.cif #1/A GLY 2000 CA  VAF_mod1.pdb #2/? UNL 1 C    2.415
+1o86.cif #1/A HOH 2311 O   VAF_mod1.pdb #2/? UNL 1 C    2.480
+1o86.cif #1/A HOH 2179 O   VAF_mod1.pdb #2/? UNL 1 H    2.512
+1o86.cif #1/A GLU 384 OE1  VAF_mod1.pdb #2/? UNL 1 H    2.560
+1o86.cif #1/A HOH 2311 O   VAF_mod1.pdb #2/? UNL 1 C    2.656
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 H    2.668
+1o86.cif #1/A HOH 2569 O   VAF_mod1.pdb #2/? UNL 1 O    2.696
+1o86.cif #1/A TYR 520 OH   VAF_mod1.pdb #2/? UNL 1 O    2.705
+1o86.cif #1/A SER 355 CA   VAF_mod1.pdb #2/? UNL 1 H    2.730
+1o86.cif #1/A GLY 2000 CA  VAF_mod1.pdb #2/? UNL 1 C    2.759
+1o86.cif #1/A HOH 2568 O   VAF_mod1.pdb #2/? UNL 1 O    2.763
+1o86.cif #1/A GLY 2000 N   VAF_mod1.pdb #2/? UNL 1 C    2.795
+1o86.cif #1/A LYS 511 NZ   VAF_mod1.pdb #2/? UNL 1 O    2.796
+1o86.cif #1/A GLY 2000 C   VAF_mod1.pdb #2/? UNL 1 C    2.838
+1o86.cif #1/A TYR 523 OH   VAF_mod1.pdb #2/? UNL 1 O    2.838
+1o86.cif #1/A LYS 511 CE   VAF_mod1.pdb #2/? UNL 1 H    2.842
+1o86.cif #1/A GLN 281 NE2  VAF_mod1.pdb #2/? UNL 1 O    2.849
+1o86.cif #1/A ALA 356 N    VAF_mod1.pdb #2/? UNL 1 H    2.854
+1o86.cif #1/A HIS 513 NE2  VAF_mod1.pdb #2/? UNL 1 O    2.888
+1o86.cif #1/A HOH 2570 O   VAF_mod1.pdb #2/? UNL 1 C    2.907
+1o86.cif #1/A HIS 513 CE1  VAF_mod1.pdb #2/? UNL 1 H    2.948
+1o86.cif #1/A GLY 2000 N   VAF_mod1.pdb #2/? UNL 1 C    2.954
+1o86.cif #1/A TYR 520 OH   VAF_mod1.pdb #2/? UNL 1 H    2.957
+1o86.cif #1/A ZN 701 ZN    VAF_mod1.pdb #2/? UNL 1 C    2.972
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 N    2.988
+1o86.cif #1/A HIS 353 NE2  VAF_mod1.pdb #2/? UNL 1 O    3.028
+1o86.cif #1/A HOH 2570 O   VAF_mod1.pdb #2/? UNL 1 C    3.042
+1o86.cif #1/A GLY 2000 O   VAF_mod1.pdb #2/? UNL 1 C    3.052
+1o86.cif #1/A HOH 2568 O   VAF_mod1.pdb #2/? UNL 1 C    3.146
+1o86.cif #1/A TYR 523 OH   VAF_mod1.pdb #2/? UNL 1 O    3.150
+1o86.cif #1/A HIS 513 CE1  VAF_mod1.pdb #2/? UNL 1 O    3.221
+1o86.cif #1/A GLU 384 OE1  VAF_mod1.pdb #2/? UNL 1 N    3.226
+1o86.cif #1/A SER 355 C    VAF_mod1.pdb #2/? UNL 1 H    3.245
+1o86.cif #1/A HOH 2568 O   VAF_mod1.pdb #2/? UNL 1 C    3.258
+1o86.cif #1/A HOH 2568 O   VAF_mod1.pdb #2/? UNL 1 H    3.261
+1o86.cif #1/A HOH 2569 O   VAF_mod1.pdb #2/? UNL 1 O    3.267
+1o86.cif #1/A GLU 411 OE1  VAF_mod1.pdb #2/? UNL 1 O    3.279
+1o86.cif #1/A HOH 2569 O   VAF_mod1.pdb #2/? UNL 1 H    3.292
+1o86.cif #1/A SER 355 CB   VAF_mod1.pdb #2/? UNL 1 H    3.302
+1o86.cif #1/A ALA 354 O    VAF_mod1.pdb #2/? UNL 1 N    3.310
+1o86.cif #1/A GLU 384 CD   VAF_mod1.pdb #2/? UNL 1 H    3.327
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 C    3.352
+1o86.cif #1/A HOH 2569 O   VAF_mod1.pdb #2/? UNL 1 C    3.357
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 H    3.359
+1o86.cif #1/A TYR 520 OH   VAF_mod1.pdb #2/? UNL 1 C    3.377
+1o86.cif #1/A ALA 354 C    VAF_mod1.pdb #2/? UNL 1 H    3.379
+1o86.cif #1/A HOH 2179 O   VAF_mod1.pdb #2/? UNL 1 C    3.384
+1o86.cif #1/A HOH 2482 O   VAF_mod1.pdb #2/? UNL 1 C    3.424
+1o86.cif #1/A TYR 523 CD2  VAF_mod1.pdb #2/? UNL 1 C    3.427
+1o86.cif #1/A HOH 2179 O   VAF_mod1.pdb #2/? UNL 1 N    3.475
+1o86.cif #1/A ALA 354 O    VAF_mod1.pdb #2/? UNL 1 C    3.488
+1o86.cif #1/A HIS 387 NE2  VAF_mod1.pdb #2/? UNL 1 N    3.496
+1o86.cif #1/A GLN 281 NE2  VAF_mod1.pdb #2/? UNL 1 H    3.501
+1o86.cif #1/A HIS 383 NE2  VAF_mod1.pdb #2/? UNL 1 O    3.505
+1o86.cif #1/A HOH 2409 O   VAF_mod1.pdb #2/? UNL 1 C    3.505
+1o86.cif #1/A GLN 281 NE2  VAF_mod1.pdb #2/? UNL 1 C    3.510
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 C    3.515
+1o86.cif #1/A HIS 387 CD2  VAF_mod1.pdb #2/? UNL 1 N    3.516
+1o86.cif #1/A HIS 513 ND1  VAF_mod1.pdb #2/? UNL 1 H    3.519
+1o86.cif #1/A GLY 2000 C   VAF_mod1.pdb #2/? UNL 1 C    3.525
+1o86.cif #1/A HIS 387 NE2  VAF_mod1.pdb #2/? UNL 1 H    3.545
+1o86.cif #1/A LYS 511 CE   VAF_mod1.pdb #2/? UNL 1 O    3.557
+1o86.cif #1/A ZN 701 ZN    VAF_mod1.pdb #2/? UNL 1 N    3.572
+1o86.cif #1/A HOH 2570 O   VAF_mod1.pdb #2/? UNL 1 C    3.573
+1o86.cif #1/A TYR 523 OH   VAF_mod1.pdb #2/? UNL 1 C    3.575
+1o86.cif #1/A GLY 2000 O   VAF_mod1.pdb #2/? UNL 1 C    3.580
+1o86.cif #1/A HOH 2568 O   VAF_mod1.pdb #2/? UNL 1 C    3.585
+1o86.cif #1/A TYR 523 CD2  VAF_mod1.pdb #2/? UNL 1 C    3.587
+1o86.cif #1/A PHE 457 CZ   VAF_mod1.pdb #2/? UNL 1 C    3.603
+1o86.cif #1/A HOH 2179 O   VAF_mod1.pdb #2/? UNL 1 C    3.608
+1o86.cif #1/A TYR 523 OH   VAF_mod1.pdb #2/? UNL 1 C    3.608
+1o86.cif #1/A HOH 2409 O   VAF_mod1.pdb #2/? UNL 1 O    3.610
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 C    3.626
+1o86.cif #1/A HIS 383 ND1  VAF_mod1.pdb #2/? UNL 1 C    3.628
+1o86.cif #1/A HIS 387 CD2  VAF_mod1.pdb #2/? UNL 1 H    3.630
+1o86.cif #1/A TYR 520 CE1  VAF_mod1.pdb #2/? UNL 1 H    3.642
+1o86.cif #1/A TYR 523 CE2  VAF_mod1.pdb #2/? UNL 1 C    3.644
+1o86.cif #1/A SER 355 CA   VAF_mod1.pdb #2/? UNL 1 N    3.651
+1o86.cif #1/A SER 355 CB   VAF_mod1.pdb #2/? UNL 1 C    3.656
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 N    3.659
+1o86.cif #1/A TYR 523 CE2  VAF_mod1.pdb #2/? UNL 1 O    3.664
+1o86.cif #1/A HIS 383 NE2  VAF_mod1.pdb #2/? UNL 1 C    3.666
+1o86.cif #1/A ASP 415 OD2  VAF_mod1.pdb #2/? UNL 1 C    3.668
+1o86.cif #1/A TYR 523 CG   VAF_mod1.pdb #2/? UNL 1 C    3.669
+1o86.cif #1/A GLN 281 NE2  VAF_mod1.pdb #2/? UNL 1 O    3.686
+1o86.cif #1/A PHE 527 CZ   VAF_mod1.pdb #2/? UNL 1 C    3.688
+1o86.cif #1/A HIS 513 CE1  VAF_mod1.pdb #2/? UNL 1 O    3.690
+1o86.cif #1/A TYR 523 CZ   VAF_mod1.pdb #2/? UNL 1 O    3.693
+1o86.cif #1/A TYR 520 OH   VAF_mod1.pdb #2/? UNL 1 C    3.695
+1o86.cif #1/A TYR 523 CE2  VAF_mod1.pdb #2/? UNL 1 N    3.697
+1o86.cif #1/A HIS 383 CE1  VAF_mod1.pdb #2/? UNL 1 C    3.702
+1o86.cif #1/A ALA 354 O    VAF_mod1.pdb #2/? UNL 1 H    3.707
+1o86.cif #1/A HIS 383 CD2  VAF_mod1.pdb #2/? UNL 1 C    3.710
+1o86.cif #1/A GLN 281 CD   VAF_mod1.pdb #2/? UNL 1 O    3.719
+1o86.cif #1/A HOH 2473 O   VAF_mod1.pdb #2/? UNL 1 H    3.725
+1o86.cif #1/A GLY 2000 CA  VAF_mod1.pdb #2/? UNL 1 C    3.730
+1o86.cif #1/A HOH 2568 O   VAF_mod1.pdb #2/? UNL 1 C    3.740
+1o86.cif #1/A HIS 387 CD2  VAF_mod1.pdb #2/? UNL 1 H    3.748
+1o86.cif #1/A ZN 701 ZN    VAF_mod1.pdb #2/? UNL 1 N    3.750
+1o86.cif #1/A GLU 384 CD   VAF_mod1.pdb #2/? UNL 1 H    3.756
+1o86.cif #1/A HOH 2482 O   VAF_mod1.pdb #2/? UNL 1 C    3.759
+1o86.cif #1/A TYR 523 CZ   VAF_mod1.pdb #2/? UNL 1 O    3.765
+1o86.cif #1/A TYR 520 CZ   VAF_mod1.pdb #2/? UNL 1 O    3.765
+1o86.cif #1/A TYR 520 CZ   VAF_mod1.pdb #2/? UNL 1 H    3.768
+1o86.cif #1/A GLU 411 OE2  VAF_mod1.pdb #2/? UNL 1 O    3.770
+1o86.cif #1/A TYR 520 OH   VAF_mod1.pdb #2/? UNL 1 C    3.782
+1o86.cif #1/A HOH 2568 O   VAF_mod1.pdb #2/? UNL 1 N    3.784
+1o86.cif #1/A TYR 523 OH   VAF_mod1.pdb #2/? UNL 1 C    3.784
+1o86.cif #1/A ALA 356 N    VAF_mod1.pdb #2/? UNL 1 N    3.787
+1o86.cif #1/A HIS 387 NE2  VAF_mod1.pdb #2/? UNL 1 O    3.790
+1o86.cif #1/A TYR 523 CE2  VAF_mod1.pdb #2/? UNL 1 C    3.791
+1o86.cif #1/A GLN 281 OE1  VAF_mod1.pdb #2/? UNL 1 O    3.792
+1o86.cif #1/A PHE 527 CZ   VAF_mod1.pdb #2/? UNL 1 C    3.793
+1o86.cif #1/A HOH 2311 O   VAF_mod1.pdb #2/? UNL 1 C    3.809
+1o86.cif #1/A HIS 353 NE2  VAF_mod1.pdb #2/? UNL 1 H    3.810
+1o86.cif #1/A HIS 513 CE1  VAF_mod1.pdb #2/? UNL 1 C    3.829
+1o86.cif #1/A HIS 353 CE1  VAF_mod1.pdb #2/? UNL 1 O    3.829
+1o86.cif #1/A HIS 353 NE2  VAF_mod1.pdb #2/? UNL 1 C    3.830
+1o86.cif #1/A GLY 2000 N   VAF_mod1.pdb #2/? UNL 1 C    3.833
+1o86.cif #1/A SER 355 N    VAF_mod1.pdb #2/? UNL 1 H    3.834
+1o86.cif #1/A PHE 527 CE1  VAF_mod1.pdb #2/? UNL 1 C    3.838
+1o86.cif #1/A TYR 523 CZ   VAF_mod1.pdb #2/? UNL 1 C    3.844
+1o86.cif #1/A GLU 384 CD   VAF_mod1.pdb #2/? UNL 1 N    3.856
+1o86.cif #1/A TYR 523 CE2  VAF_mod1.pdb #2/? UNL 1 C    3.858
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 C    3.867
+1o86.cif #1/A HIS 513 CE1  VAF_mod1.pdb #2/? UNL 1 C    3.869
+1o86.cif #1/A HIS 513 NE2  VAF_mod1.pdb #2/? UNL 1 H    3.870
+1o86.cif #1/A ALA 356 N    VAF_mod1.pdb #2/? UNL 1 H    3.876
+1o86.cif #1/A PHE 527 CE1  VAF_mod1.pdb #2/? UNL 1 C    3.879
+1o86.cif #1/A ZN 701 ZN    VAF_mod1.pdb #2/? UNL 1 C    3.883
+1o86.cif #1/A GLU 411 CD   VAF_mod1.pdb #2/? UNL 1 O    3.891
+1o86.cif #1/A PHE 457 CZ   VAF_mod1.pdb #2/? UNL 1 C    3.891
+1o86.cif #1/A LYS 511 NZ   VAF_mod1.pdb #2/? UNL 1 C    3.896
+1o86.cif #1/A SER 355 CA   VAF_mod1.pdb #2/? UNL 1 C    3.896
+1o86.cif #1/A ASP 415 OD2  VAF_mod1.pdb #2/? UNL 1 C    3.901
+1o86.cif #1/A HIS 383 CE1  VAF_mod1.pdb #2/? UNL 1 C    3.904
+1o86.cif #1/A HIS 513 NE2  VAF_mod1.pdb #2/? UNL 1 C    3.906
+1o86.cif #1/A HIS 353 CD2  VAF_mod1.pdb #2/? UNL 1 H    3.918
+1o86.cif #1/A ZN 701 ZN    VAF_mod1.pdb #2/? UNL 1 H    3.919
+1o86.cif #1/A TYR 523 CZ   VAF_mod1.pdb #2/? UNL 1 C    3.920
+1o86.cif #1/A HIS 513 NE2  VAF_mod1.pdb #2/? UNL 1 C    3.921
+1o86.cif #1/A HOH 2568 O   VAF_mod1.pdb #2/? UNL 1 C    3.929
+1o86.cif #1/A GLN 281 OE1  VAF_mod1.pdb #2/? UNL 1 H    3.930
+1o86.cif #1/A GLU 384 OE1  VAF_mod1.pdb #2/? UNL 1 H    3.933
+1o86.cif #1/A TYR 523 CE2  VAF_mod1.pdb #2/? UNL 1 C    3.935
+1o86.cif #1/A PHE 457 CZ   VAF_mod1.pdb #2/? UNL 1 C    3.941
+1o86.cif #1/A TYR 520 CE1  VAF_mod1.pdb #2/? UNL 1 O    3.941
+1o86.cif #1/A TYR 523 CD2  VAF_mod1.pdb #2/? UNL 1 C    3.944
+1o86.cif #1/A ZN 701 ZN    VAF_mod1.pdb #2/? UNL 1 C    3.949
+1o86.cif #1/A GLY 2000 N   VAF_mod1.pdb #2/? UNL 1 C    3.950
+1o86.cif #1/A HOH 2568 O   VAF_mod1.pdb #2/? UNL 1 C    3.959
+1o86.cif #1/A TYR 523 CZ   VAF_mod1.pdb #2/? UNL 1 N    3.959
+1o86.cif #1/A GLY 2000 CA  VAF_mod1.pdb #2/? UNL 1 C    3.961
+1o86.cif #1/A ALA 354 O    VAF_mod1.pdb #2/? UNL 1 C    3.978
+1o86.cif #1/A SER 355 CB   VAF_mod1.pdb #2/? UNL 1 C    3.992
+1o86.cif #1/A HIS 383 NE2  VAF_mod1.pdb #2/? UNL 1 C    3.998
+1o86.cif #1/A PHE 457 CE1  VAF_mod1.pdb #2/? UNL 1 C    3.999
+
+167 distances
+delete solvent
+hbonds #1 restrict #2 reveal true log true saveFile /home/maksym/Desktop/hbonds_list.txt
+The following atoms were skipped as donors/acceptors due to missing heavy-atom bond partners: 1o86.cif #1/A GLN 618 N
+
+Finding intermodel H-bonds
+Finding intramodel H-bonds
+Constraints relaxed by 0.4 angstroms and 20 degrees
+Models used:
+	2 VAF_mod1.pdb
+	1 1o86.cif
+
+7 H-bonds
+H-bonds (donor, acceptor, hydrogen, D..A dist, D-H..A dist):
+1o86.cif #1/A GLN 281 NE2  VAF_mod1.pdb #2/? UNL 1 O  no hydrogen                2.849  N/A
+1o86.cif #1/A HIS 353 NE2  VAF_mod1.pdb #2/? UNL 1 O  no hydrogen                3.028  N/A
+1o86.cif #1/A LYS 511 NZ   VAF_mod1.pdb #2/? UNL 1 O  no hydrogen                2.796  N/A
+1o86.cif #1/A HIS 513 NE2  VAF_mod1.pdb #2/? UNL 1 O  no hydrogen                2.888  N/A
+1o86.cif #1/A TYR 520 OH   VAF_mod1.pdb #2/? UNL 1 O  no hydrogen                2.705  N/A
+1o86.cif #1/A TYR 523 OH   VAF_mod1.pdb #2/? UNL 1 O  no hydrogen                2.838  N/A
+VAF_mod1.pdb #2/? UNL 1 N  1o86.cif #1/A ALA 354 O    VAF_mod1.pdb #2/? UNL 1 H  3.310  2.318
+
+7 hydrogen bonds found
+contacts #1 restrict #2 distanceOnly 4.0 reveal true log true saveFile /home/maksym/Desktop/electro_contacts.txt
+Ignore distances between atoms separated by 4 bonds or less
+Detect intra-residue distances: False
+Detect intra-molecule distances: True
+
+135 distances
+          atom1                      atom2            distance
+1o86.cif #1/A GLY 2000 CA  VAF_mod1.pdb #2/? UNL 1 C    1.637
+1o86.cif #1/A GLY 2000 N   VAF_mod1.pdb #2/? UNL 1 C    2.198
+1o86.cif #1/A ZN 701 ZN    VAF_mod1.pdb #2/? UNL 1 O    2.202
+1o86.cif #1/A LYS 511 NZ   VAF_mod1.pdb #2/? UNL 1 H    2.272
+1o86.cif #1/A GLY 2000 C   VAF_mod1.pdb #2/? UNL 1 C    2.309
+1o86.cif #1/A ALA 354 O    VAF_mod1.pdb #2/? UNL 1 H    2.318
+1o86.cif #1/A GLY 2000 CA  VAF_mod1.pdb #2/? UNL 1 C    2.415
+1o86.cif #1/A GLU 384 OE1  VAF_mod1.pdb #2/? UNL 1 H    2.560
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 H    2.668
+1o86.cif #1/A TYR 520 OH   VAF_mod1.pdb #2/? UNL 1 O    2.705
+1o86.cif #1/A SER 355 CA   VAF_mod1.pdb #2/? UNL 1 H    2.730
+1o86.cif #1/A GLY 2000 CA  VAF_mod1.pdb #2/? UNL 1 C    2.759
+1o86.cif #1/A GLY 2000 N   VAF_mod1.pdb #2/? UNL 1 C    2.795
+1o86.cif #1/A LYS 511 NZ   VAF_mod1.pdb #2/? UNL 1 O    2.796
+1o86.cif #1/A GLY 2000 C   VAF_mod1.pdb #2/? UNL 1 C    2.838
+1o86.cif #1/A TYR 523 OH   VAF_mod1.pdb #2/? UNL 1 O    2.838
+1o86.cif #1/A LYS 511 CE   VAF_mod1.pdb #2/? UNL 1 H    2.842
+1o86.cif #1/A GLN 281 NE2  VAF_mod1.pdb #2/? UNL 1 O    2.849
+1o86.cif #1/A ALA 356 N    VAF_mod1.pdb #2/? UNL 1 H    2.854
+1o86.cif #1/A HIS 513 NE2  VAF_mod1.pdb #2/? UNL 1 O    2.888
+1o86.cif #1/A HIS 513 CE1  VAF_mod1.pdb #2/? UNL 1 H    2.948
+1o86.cif #1/A GLY 2000 N   VAF_mod1.pdb #2/? UNL 1 C    2.954
+1o86.cif #1/A TYR 520 OH   VAF_mod1.pdb #2/? UNL 1 H    2.957
+1o86.cif #1/A ZN 701 ZN    VAF_mod1.pdb #2/? UNL 1 C    2.972
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 N    2.988
+1o86.cif #1/A HIS 353 NE2  VAF_mod1.pdb #2/? UNL 1 O    3.028
+1o86.cif #1/A GLY 2000 O   VAF_mod1.pdb #2/? UNL 1 C    3.052
+1o86.cif #1/A TYR 523 OH   VAF_mod1.pdb #2/? UNL 1 O    3.150
+1o86.cif #1/A HIS 513 CE1  VAF_mod1.pdb #2/? UNL 1 O    3.221
+1o86.cif #1/A GLU 384 OE1  VAF_mod1.pdb #2/? UNL 1 N    3.226
+1o86.cif #1/A SER 355 C    VAF_mod1.pdb #2/? UNL 1 H    3.245
+1o86.cif #1/A GLU 411 OE1  VAF_mod1.pdb #2/? UNL 1 O    3.279
+1o86.cif #1/A SER 355 CB   VAF_mod1.pdb #2/? UNL 1 H    3.302
+1o86.cif #1/A ALA 354 O    VAF_mod1.pdb #2/? UNL 1 N    3.310
+1o86.cif #1/A GLU 384 CD   VAF_mod1.pdb #2/? UNL 1 H    3.327
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 C    3.352
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 H    3.359
+1o86.cif #1/A TYR 520 OH   VAF_mod1.pdb #2/? UNL 1 C    3.377
+1o86.cif #1/A ALA 354 C    VAF_mod1.pdb #2/? UNL 1 H    3.379
+1o86.cif #1/A TYR 523 CD2  VAF_mod1.pdb #2/? UNL 1 C    3.427
+1o86.cif #1/A ALA 354 O    VAF_mod1.pdb #2/? UNL 1 C    3.488
+1o86.cif #1/A HIS 387 NE2  VAF_mod1.pdb #2/? UNL 1 N    3.496
+1o86.cif #1/A GLN 281 NE2  VAF_mod1.pdb #2/? UNL 1 H    3.501
+1o86.cif #1/A HIS 383 NE2  VAF_mod1.pdb #2/? UNL 1 O    3.505
+1o86.cif #1/A GLN 281 NE2  VAF_mod1.pdb #2/? UNL 1 C    3.510
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 C    3.515
+1o86.cif #1/A HIS 387 CD2  VAF_mod1.pdb #2/? UNL 1 N    3.516
+1o86.cif #1/A HIS 513 ND1  VAF_mod1.pdb #2/? UNL 1 H    3.519
+1o86.cif #1/A GLY 2000 C   VAF_mod1.pdb #2/? UNL 1 C    3.525
+1o86.cif #1/A HIS 387 NE2  VAF_mod1.pdb #2/? UNL 1 H    3.545
+1o86.cif #1/A LYS 511 CE   VAF_mod1.pdb #2/? UNL 1 O    3.557
+1o86.cif #1/A ZN 701 ZN    VAF_mod1.pdb #2/? UNL 1 N    3.572
+1o86.cif #1/A TYR 523 OH   VAF_mod1.pdb #2/? UNL 1 C    3.575
+1o86.cif #1/A GLY 2000 O   VAF_mod1.pdb #2/? UNL 1 C    3.580
+1o86.cif #1/A TYR 523 CD2  VAF_mod1.pdb #2/? UNL 1 C    3.587
+1o86.cif #1/A PHE 457 CZ   VAF_mod1.pdb #2/? UNL 1 C    3.603
+1o86.cif #1/A TYR 523 OH   VAF_mod1.pdb #2/? UNL 1 C    3.608
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 C    3.626
+1o86.cif #1/A HIS 383 ND1  VAF_mod1.pdb #2/? UNL 1 C    3.628
+1o86.cif #1/A HIS 387 CD2  VAF_mod1.pdb #2/? UNL 1 H    3.630
+1o86.cif #1/A TYR 520 CE1  VAF_mod1.pdb #2/? UNL 1 H    3.642
+1o86.cif #1/A TYR 523 CE2  VAF_mod1.pdb #2/? UNL 1 C    3.644
+1o86.cif #1/A SER 355 CA   VAF_mod1.pdb #2/? UNL 1 N    3.651
+1o86.cif #1/A SER 355 CB   VAF_mod1.pdb #2/? UNL 1 C    3.656
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 N    3.659
+1o86.cif #1/A TYR 523 CE2  VAF_mod1.pdb #2/? UNL 1 O    3.664
+1o86.cif #1/A HIS 383 NE2  VAF_mod1.pdb #2/? UNL 1 C    3.666
+1o86.cif #1/A ASP 415 OD2  VAF_mod1.pdb #2/? UNL 1 C    3.668
+1o86.cif #1/A TYR 523 CG   VAF_mod1.pdb #2/? UNL 1 C    3.669
+1o86.cif #1/A GLN 281 NE2  VAF_mod1.pdb #2/? UNL 1 O    3.686
+1o86.cif #1/A PHE 527 CZ   VAF_mod1.pdb #2/? UNL 1 C    3.688
+1o86.cif #1/A HIS 513 CE1  VAF_mod1.pdb #2/? UNL 1 O    3.690
+1o86.cif #1/A TYR 523 CZ   VAF_mod1.pdb #2/? UNL 1 O    3.693
+1o86.cif #1/A TYR 520 OH   VAF_mod1.pdb #2/? UNL 1 C    3.695
+1o86.cif #1/A TYR 523 CE2  VAF_mod1.pdb #2/? UNL 1 N    3.697
+1o86.cif #1/A HIS 383 CE1  VAF_mod1.pdb #2/? UNL 1 C    3.702
+1o86.cif #1/A ALA 354 O    VAF_mod1.pdb #2/? UNL 1 H    3.707
+1o86.cif #1/A HIS 383 CD2  VAF_mod1.pdb #2/? UNL 1 C    3.710
+1o86.cif #1/A GLN 281 CD   VAF_mod1.pdb #2/? UNL 1 O    3.719
+1o86.cif #1/A GLY 2000 CA  VAF_mod1.pdb #2/? UNL 1 C    3.730
+1o86.cif #1/A HIS 387 CD2  VAF_mod1.pdb #2/? UNL 1 H    3.748
+1o86.cif #1/A ZN 701 ZN    VAF_mod1.pdb #2/? UNL 1 N    3.750
+1o86.cif #1/A GLU 384 CD   VAF_mod1.pdb #2/? UNL 1 H    3.756
+1o86.cif #1/A TYR 523 CZ   VAF_mod1.pdb #2/? UNL 1 O    3.765
+1o86.cif #1/A TYR 520 CZ   VAF_mod1.pdb #2/? UNL 1 O    3.765
+1o86.cif #1/A TYR 520 CZ   VAF_mod1.pdb #2/? UNL 1 H    3.768
+1o86.cif #1/A GLU 411 OE2  VAF_mod1.pdb #2/? UNL 1 O    3.770
+1o86.cif #1/A TYR 520 OH   VAF_mod1.pdb #2/? UNL 1 C    3.782
+1o86.cif #1/A TYR 523 OH   VAF_mod1.pdb #2/? UNL 1 C    3.784
+1o86.cif #1/A ALA 356 N    VAF_mod1.pdb #2/? UNL 1 N    3.787
+1o86.cif #1/A HIS 387 NE2  VAF_mod1.pdb #2/? UNL 1 O    3.790
+1o86.cif #1/A TYR 523 CE2  VAF_mod1.pdb #2/? UNL 1 C    3.791
+1o86.cif #1/A GLN 281 OE1  VAF_mod1.pdb #2/? UNL 1 O    3.792
+1o86.cif #1/A PHE 527 CZ   VAF_mod1.pdb #2/? UNL 1 C    3.793
+1o86.cif #1/A HIS 353 NE2  VAF_mod1.pdb #2/? UNL 1 H    3.810
+1o86.cif #1/A HIS 513 CE1  VAF_mod1.pdb #2/? UNL 1 C    3.829
+1o86.cif #1/A HIS 353 CE1  VAF_mod1.pdb #2/? UNL 1 O    3.829
+1o86.cif #1/A HIS 353 NE2  VAF_mod1.pdb #2/? UNL 1 C    3.830
+1o86.cif #1/A GLY 2000 N   VAF_mod1.pdb #2/? UNL 1 C    3.833
+1o86.cif #1/A SER 355 N    VAF_mod1.pdb #2/? UNL 1 H    3.834
+1o86.cif #1/A PHE 527 CE1  VAF_mod1.pdb #2/? UNL 1 C    3.838
+1o86.cif #1/A TYR 523 CZ   VAF_mod1.pdb #2/? UNL 1 C    3.844
+1o86.cif #1/A GLU 384 CD   VAF_mod1.pdb #2/? UNL 1 N    3.856
+1o86.cif #1/A TYR 523 CE2  VAF_mod1.pdb #2/? UNL 1 C    3.858
+1o86.cif #1/A GLU 384 OE2  VAF_mod1.pdb #2/? UNL 1 C    3.867
+1o86.cif #1/A HIS 513 CE1  VAF_mod1.pdb #2/? UNL 1 C    3.869
+1o86.cif #1/A HIS 513 NE2  VAF_mod1.pdb #2/? UNL 1 H    3.870
+1o86.cif #1/A ALA 356 N    VAF_mod1.pdb #2/? UNL 1 H    3.876
+1o86.cif #1/A PHE 527 CE1  VAF_mod1.pdb #2/? UNL 1 C    3.879
+1o86.cif #1/A ZN 701 ZN    VAF_mod1.pdb #2/? UNL 1 C    3.883
+1o86.cif #1/A GLU 411 CD   VAF_mod1.pdb #2/? UNL 1 O    3.891
+1o86.cif #1/A PHE 457 CZ   VAF_mod1.pdb #2/? UNL 1 C    3.891
+1o86.cif #1/A LYS 511 NZ   VAF_mod1.pdb #2/? UNL 1 C    3.896
+1o86.cif #1/A SER 355 CA   VAF_mod1.pdb #2/? UNL 1 C    3.896
+1o86.cif #1/A ASP 415 OD2  VAF_mod1.pdb #2/? UNL 1 C    3.901
+1o86.cif #1/A HIS 383 CE1  VAF_mod1.pdb #2/? UNL 1 C    3.904
+1o86.cif #1/A HIS 513 NE2  VAF_mod1.pdb #2/? UNL 1 C    3.906
+1o86.cif #1/A HIS 353 CD2  VAF_mod1.pdb #2/? UNL 1 H    3.918
+1o86.cif #1/A ZN 701 ZN    VAF_mod1.pdb #2/? UNL 1 H    3.919
+1o86.cif #1/A TYR 523 CZ   VAF_mod1.pdb #2/? UNL 1 C    3.920
+1o86.cif #1/A HIS 513 NE2  VAF_mod1.pdb #2/? UNL 1 C    3.921
+1o86.cif #1/A GLN 281 OE1  VAF_mod1.pdb #2/? UNL 1 H    3.930
+1o86.cif #1/A GLU 384 OE1  VAF_mod1.pdb #2/? UNL 1 H    3.933
+1o86.cif #1/A TYR 523 CE2  VAF_mod1.pdb #2/? UNL 1 C    3.935
+1o86.cif #1/A PHE 457 CZ   VAF_mod1.pdb #2/? UNL 1 C    3.941
+1o86.cif #1/A TYR 520 CE1  VAF_mod1.pdb #2/? UNL 1 O    3.941
+1o86.cif #1/A TYR 523 CD2  VAF_mod1.pdb #2/? UNL 1 C    3.944
+1o86.cif #1/A ZN 701 ZN    VAF_mod1.pdb #2/? UNL 1 C    3.949
+1o86.cif #1/A GLY 2000 N   VAF_mod1.pdb #2/? UNL 1 C    3.950
+1o86.cif #1/A TYR 523 CZ   VAF_mod1.pdb #2/? UNL 1 N    3.959
+1o86.cif #1/A GLY 2000 CA  VAF_mod1.pdb #2/? UNL 1 C    3.961
+1o86.cif #1/A ALA 354 O    VAF_mod1.pdb #2/? UNL 1 C    3.978
+1o86.cif #1/A SER 355 CB   VAF_mod1.pdb #2/? UNL 1 C    3.992
+1o86.cif #1/A HIS 383 NE2  VAF_mod1.pdb #2/? UNL 1 C    3.998
+1o86.cif #1/A PHE 457 CE1  VAF_mod1.pdb #2/? UNL 1 C    3.999
+
+135 distances
+close
+open /home/maksym/lupinus/4PNZ.cif/4pnz.cif format mmcif
+4pnz.cif title:
+Human dipeptidyl peptidase IV/CD26 in complex with the long-acting inhibitor Omarigliptin (MK-3102) [more info...]
+
+Chain information for 4pnz.cif #1
+Chain	Description	UniProt
+A B	Dipeptidyl peptidase 4	DPP4_HUMAN 39-766
+
+Non-standard residues in 4pnz.cif #1
+2VH — (2R,3S,5R)-5-[2-(methylsulfonyl)-2,6-dihydropyrrolo[3,4-c]pyrazol-5(4H)-yl]-2-(2,4,5-trifluorophenyl)tetrahydro-2H-pyran-3-amine
+NA — sodium ion
+NAG — 2-acetamido-2-deoxy-beta-D-glucopyranose (N-acetyl-beta-D-glucosamine; 2-acetamido-2-deoxy-beta-D-glucose; 2-acetamido-2-deoxy-D-glucose; 2-acetamido-2-deoxy-glucose; N-ACETYL-D-GLUCOSAMINE)
+
+14 atoms have alternate locations. Control/examine alternate locations with Altloc Explorer [start tool...] or the altlocs command.
+delete solvent
+delete :2VH
+hbonds #1 restrict #2 reveal true log true saveFile /home/maksym/Desktop/hbonds_list.txt
+'restrict' atom specifier selects no atoms
+open /home/maksym/lupinus/dock_res_2run/DPP_pdb/WQ_mod1.pdb
+Summary of feedback from opening /home/maksym/lupinus/dock_res_2run/DPP_pdb/WQ_mod1.pdb
+warnings	Ignored bad PDB record found on line 2
+REMARK VINA RESULT: -8.386 0.000 0.000
+
+Ignored bad PDB record found on line 3
+REMARK INTER + INTRA: -13.453
+
+Ignored bad PDB record found on line 4
+REMARK INTER: -12.308
+
+Ignored bad PDB record found on line 5
+REMARK INTRA: -1.144
+
+Ignored bad PDB record found on line 6
+REMARK UNBOUND: -0.655
+
+5 messages similar to the above omitted
+
+hbonds #1 restrict #2 reveal true log true saveFile /home/maksym/Desktop/hbonds_list.txt
+Finding intermodel H-bonds
+Finding intramodel H-bonds
+Constraints relaxed by 0.4 angstroms and 20 degrees
+Models used:
+	1 4pnz.cif
+	2 WQ_mod1.pdb
+
+3 H-bonds
+H-bonds (donor, acceptor, hydrogen, D..A dist, D-H..A dist):
+4pnz.cif #1/B SER 630 OG  WQ_mod1.pdb #2/? UNL 1 O  no hydrogen               2.868  N/A
+WQ_mod1.pdb #2/? UNL 1 N  4pnz.cif #1/B TYR 547 OH  WQ_mod1.pdb #2/? UNL 1 H  3.312  2.389
+WQ_mod1.pdb #2/? UNL 1 N  4pnz.cif #1/B SER 630 OG  WQ_mod1.pdb #2/? UNL 1 H  3.030  2.262
+
+3 hydrogen bonds found
+contacts #1 restrict #2 distanceOnly 4.0 reveal true log true saveFile /home/maksym/Desktop/electro_contacts.txt
+Ignore distances between atoms separated by 4 bonds or less
+Detect intra-residue distances: False
+Detect intra-molecule distances: True
+
+107 distances
+          atom1                     atom2            distance
+4pnz.cif #1/B SER 630 OG   WQ_mod1.pdb #2/? UNL 1 H    2.262
+4pnz.cif #1/B TYR 547 OH   WQ_mod1.pdb #2/? UNL 1 H    2.389
+4pnz.cif #1/B ASN 710 OD1  WQ_mod1.pdb #2/? UNL 1 H    2.503
+4pnz.cif #1/B ASN 710 ND2  WQ_mod1.pdb #2/? UNL 1 H    2.570
+4pnz.cif #1/B TYR 662 OH   WQ_mod1.pdb #2/? UNL 1 H    2.602
+4pnz.cif #1/B VAL 711 CG2  WQ_mod1.pdb #2/? UNL 1 H    2.809
+4pnz.cif #1/B ASN 710 CG   WQ_mod1.pdb #2/? UNL 1 H    2.810
+4pnz.cif #1/B TYR 547 OH   WQ_mod1.pdb #2/? UNL 1 N    2.845
+4pnz.cif #1/B SER 630 OG   WQ_mod1.pdb #2/? UNL 1 O    2.868
+4pnz.cif #1/B TYR 662 OH   WQ_mod1.pdb #2/? UNL 1 O    2.896
+4pnz.cif #1/B GLU 205 OE2  WQ_mod1.pdb #2/? UNL 1 H    2.972
+4pnz.cif #1/B VAL 656 CG2  WQ_mod1.pdb #2/? UNL 1 H    2.983
+4pnz.cif #1/B ASN 710 OD1  WQ_mod1.pdb #2/? UNL 1 O    2.992
+4pnz.cif #1/B ARG 125 NH2  WQ_mod1.pdb #2/? UNL 1 O    3.021
+4pnz.cif #1/B TYR 547 OH   WQ_mod1.pdb #2/? UNL 1 H    3.024
+4pnz.cif #1/B SER 630 OG   WQ_mod1.pdb #2/? UNL 1 N    3.030
+4pnz.cif #1/B GLU 205 OE2  WQ_mod1.pdb #2/? UNL 1 O    3.292
+4pnz.cif #1/B TYR 547 OH   WQ_mod1.pdb #2/? UNL 1 H    3.306
+4pnz.cif #1/B TYR 547 OH   WQ_mod1.pdb #2/? UNL 1 N    3.312
+4pnz.cif #1/B ASN 710 ND2  WQ_mod1.pdb #2/? UNL 1 O    3.326
+4pnz.cif #1/B GLU 206 OE1  WQ_mod1.pdb #2/? UNL 1 C    3.343
+4pnz.cif #1/B TYR 662 OH   WQ_mod1.pdb #2/? UNL 1 C    3.353
+4pnz.cif #1/B ASN 710 CG   WQ_mod1.pdb #2/? UNL 1 O    3.391
+4pnz.cif #1/B TYR 547 OH   WQ_mod1.pdb #2/? UNL 1 C    3.450
+4pnz.cif #1/B SER 630 OG   WQ_mod1.pdb #2/? UNL 1 C    3.471
+4pnz.cif #1/B TYR 666 CE1  WQ_mod1.pdb #2/? UNL 1 O    3.480
+4pnz.cif #1/B VAL 711 CG2  WQ_mod1.pdb #2/? UNL 1 H    3.516
+4pnz.cif #1/B VAL 711 CG2  WQ_mod1.pdb #2/? UNL 1 N    3.531
+4pnz.cif #1/B SER 630 OG   WQ_mod1.pdb #2/? UNL 1 H    3.531
+4pnz.cif #1/B PHE 357 CD1  WQ_mod1.pdb #2/? UNL 1 C    3.552
+4pnz.cif #1/B ARG 125 CZ   WQ_mod1.pdb #2/? UNL 1 O    3.557
+4pnz.cif #1/B HIS 740 NE2  WQ_mod1.pdb #2/? UNL 1 H    3.564
+4pnz.cif #1/B TYR 547 CZ   WQ_mod1.pdb #2/? UNL 1 N    3.576
+4pnz.cif #1/B PHE 357 CE1  WQ_mod1.pdb #2/? UNL 1 C    3.595
+4pnz.cif #1/B TRP 659 CH2  WQ_mod1.pdb #2/? UNL 1 O    3.598
+4pnz.cif #1/B SER 630 CB   WQ_mod1.pdb #2/? UNL 1 H    3.608
+4pnz.cif #1/B HIS 740 NE2  WQ_mod1.pdb #2/? UNL 1 O    3.646
+4pnz.cif #1/B TYR 662 CE2  WQ_mod1.pdb #2/? UNL 1 O    3.654
+4pnz.cif #1/B PHE 357 CG   WQ_mod1.pdb #2/? UNL 1 C    3.662
+4pnz.cif #1/B TYR 666 CE2  WQ_mod1.pdb #2/? UNL 1 C    3.663
+4pnz.cif #1/B ARG 125 NH2  WQ_mod1.pdb #2/? UNL 1 H    3.664
+4pnz.cif #1/B GLU 205 O    WQ_mod1.pdb #2/? UNL 1 C    3.666
+4pnz.cif #1/B SER 209 OG   WQ_mod1.pdb #2/? UNL 1 C    3.680
+4pnz.cif #1/B TYR 547 CZ   WQ_mod1.pdb #2/? UNL 1 H    3.682
+4pnz.cif #1/B ARG 125 NH2  WQ_mod1.pdb #2/? UNL 1 O    3.698
+4pnz.cif #1/B PHE 357 CZ   WQ_mod1.pdb #2/? UNL 1 C    3.701
+4pnz.cif #1/B TYR 547 CZ   WQ_mod1.pdb #2/? UNL 1 H    3.717
+4pnz.cif #1/B PHE 357 CD1  WQ_mod1.pdb #2/? UNL 1 C    3.721
+4pnz.cif #1/B TRP 659 CZ3  WQ_mod1.pdb #2/? UNL 1 O    3.724
+4pnz.cif #1/B ARG 125 NH2  WQ_mod1.pdb #2/? UNL 1 C    3.727
+4pnz.cif #1/B TYR 547 CZ   WQ_mod1.pdb #2/? UNL 1 H    3.728
+4pnz.cif #1/B PHE 357 CD2  WQ_mod1.pdb #2/? UNL 1 N    3.731
+4pnz.cif #1/B PHE 357 CE2  WQ_mod1.pdb #2/? UNL 1 C    3.733
+4pnz.cif #1/B PHE 357 CE1  WQ_mod1.pdb #2/? UNL 1 C    3.745
+4pnz.cif #1/B PHE 357 CB   WQ_mod1.pdb #2/? UNL 1 C    3.747
+4pnz.cif #1/B TYR 662 OH   WQ_mod1.pdb #2/? UNL 1 C    3.747
+4pnz.cif #1/B PHE 357 CZ   WQ_mod1.pdb #2/? UNL 1 C    3.754
+4pnz.cif #1/B TYR 662 CE1  WQ_mod1.pdb #2/? UNL 1 H    3.755
+4pnz.cif #1/B TYR 666 OH   WQ_mod1.pdb #2/? UNL 1 C    3.769
+4pnz.cif #1/B TYR 666 CZ   WQ_mod1.pdb #2/? UNL 1 C    3.785
+4pnz.cif #1/B SER 630 OG   WQ_mod1.pdb #2/? UNL 1 O    3.785
+4pnz.cif #1/B VAL 656 CG2  WQ_mod1.pdb #2/? UNL 1 O    3.792
+4pnz.cif #1/B PHE 357 CE1  WQ_mod1.pdb #2/? UNL 1 C    3.796
+4pnz.cif #1/B HIS 740 NE2  WQ_mod1.pdb #2/? UNL 1 O    3.803
+4pnz.cif #1/B TYR 662 CZ   WQ_mod1.pdb #2/? UNL 1 H    3.811
+4pnz.cif #1/B SER 630 OG   WQ_mod1.pdb #2/? UNL 1 C    3.812
+4pnz.cif #1/B TYR 666 CZ   WQ_mod1.pdb #2/? UNL 1 C    3.814
+4pnz.cif #1/B TYR 662 OH   WQ_mod1.pdb #2/? UNL 1 C    3.816
+4pnz.cif #1/B GLU 205 OE2  WQ_mod1.pdb #2/? UNL 1 O    3.828
+4pnz.cif #1/B TYR 662 CZ   WQ_mod1.pdb #2/? UNL 1 N    3.830
+4pnz.cif #1/B HIS 740 CD2  WQ_mod1.pdb #2/? UNL 1 O    3.832
+4pnz.cif #1/B TYR 662 CZ   WQ_mod1.pdb #2/? UNL 1 H    3.832
+4pnz.cif #1/B PHE 357 CD1  WQ_mod1.pdb #2/? UNL 1 C    3.840
+4pnz.cif #1/B GLU 206 OE1  WQ_mod1.pdb #2/? UNL 1 C    3.848
+4pnz.cif #1/B SER 630 OG   WQ_mod1.pdb #2/? UNL 1 C    3.851
+4pnz.cif #1/B PHE 357 CD2  WQ_mod1.pdb #2/? UNL 1 H    3.860
+4pnz.cif #1/B VAL 656 CG2  WQ_mod1.pdb #2/? UNL 1 N    3.862
+4pnz.cif #1/B ARG 125 NH2  WQ_mod1.pdb #2/? UNL 1 C    3.871
+4pnz.cif #1/B TYR 662 CZ   WQ_mod1.pdb #2/? UNL 1 C    3.872
+4pnz.cif #1/B GLU 205 OE2  WQ_mod1.pdb #2/? UNL 1 C    3.882
+4pnz.cif #1/B PHE 357 CG   WQ_mod1.pdb #2/? UNL 1 C    3.883
+4pnz.cif #1/B TYR 662 CZ   WQ_mod1.pdb #2/? UNL 1 O    3.887
+4pnz.cif #1/B TYR 631 CD2  WQ_mod1.pdb #2/? UNL 1 O    3.889
+4pnz.cif #1/B PHE 357 CG   WQ_mod1.pdb #2/? UNL 1 C    3.893
+4pnz.cif #1/B PHE 357 CE2  WQ_mod1.pdb #2/? UNL 1 N    3.894
+4pnz.cif #1/B GLU 205 O    WQ_mod1.pdb #2/? UNL 1 C    3.898
+4pnz.cif #1/B TYR 662 CD2  WQ_mod1.pdb #2/? UNL 1 O    3.910
+4pnz.cif #1/B TYR 666 CZ   WQ_mod1.pdb #2/? UNL 1 O    3.912
+4pnz.cif #1/B SER 209 OG   WQ_mod1.pdb #2/? UNL 1 C    3.914
+4pnz.cif #1/B PHE 357 CD1  WQ_mod1.pdb #2/? UNL 1 C    3.914
+4pnz.cif #1/B PHE 357 CD2  WQ_mod1.pdb #2/? UNL 1 C    3.915
+4pnz.cif #1/B SER 630 CB   WQ_mod1.pdb #2/? UNL 1 O    3.919
+4pnz.cif #1/B HIS 740 CD2  WQ_mod1.pdb #2/? UNL 1 O    3.921
+4pnz.cif #1/B TYR 662 CE2  WQ_mod1.pdb #2/? UNL 1 C    3.921
+4pnz.cif #1/B TYR 662 OH   WQ_mod1.pdb #2/? UNL 1 N    3.924
+4pnz.cif #1/B PHE 357 CB   WQ_mod1.pdb #2/? UNL 1 C    3.934
+4pnz.cif #1/B PHE 357 CZ   WQ_mod1.pdb #2/? UNL 1 C    3.946
+4pnz.cif #1/B TYR 662 CZ   WQ_mod1.pdb #2/? UNL 1 C    3.946
+4pnz.cif #1/B TYR 547 OH   WQ_mod1.pdb #2/? UNL 1 C    3.949
+4pnz.cif #1/B GLU 206 O    WQ_mod1.pdb #2/? UNL 1 C    3.956
+4pnz.cif #1/B GLU 205 CD   WQ_mod1.pdb #2/? UNL 1 H    3.964
+4pnz.cif #1/B TYR 662 CZ   WQ_mod1.pdb #2/? UNL 1 O    3.975
+4pnz.cif #1/B PHE 357 CG   WQ_mod1.pdb #2/? UNL 1 N    3.976
+4pnz.cif #1/B TYR 666 CD2  WQ_mod1.pdb #2/? UNL 1 C    3.980
+4pnz.cif #1/B TYR 631 N    WQ_mod1.pdb #2/? UNL 1 H    3.984
+4pnz.cif #1/B GLU 205 OE2  WQ_mod1.pdb #2/? UNL 1 C    3.988
+4pnz.cif #1/B TYR 631 N    WQ_mod1.pdb #2/? UNL 1 N    4.000
+
+107 distances
+contacts #1/B & C restrict #2 & C distanceCutoff 4.0 reveal true log true
+Expected a keyword
+contacts #1/B & element C restrict #2 & element C distanceOnly 4.0 reveal true log true
+Expected a keyword
+contacts (#1/B & C) restrict (#2 & C) distanceOnly 4.0 reveal true log true
+Ignore distances between atoms separated by 4 bonds or less
+Detect intra-residue distances: False
+Detect intra-molecule distances: True
+
+24 distances
+          atom1                     atom2            distance
+4pnz.cif #1/B PHE 357 CD1  WQ_mod1.pdb #2/? UNL 1 C    3.552
+4pnz.cif #1/B PHE 357 CE1  WQ_mod1.pdb #2/? UNL 1 C    3.595
+4pnz.cif #1/B PHE 357 CG   WQ_mod1.pdb #2/? UNL 1 C    3.662
+4pnz.cif #1/B TYR 666 CE2  WQ_mod1.pdb #2/? UNL 1 C    3.663
+4pnz.cif #1/B PHE 357 CZ   WQ_mod1.pdb #2/? UNL 1 C    3.701
+4pnz.cif #1/B PHE 357 CD1  WQ_mod1.pdb #2/? UNL 1 C    3.721
+4pnz.cif #1/B PHE 357 CE2  WQ_mod1.pdb #2/? UNL 1 C    3.733
+4pnz.cif #1/B PHE 357 CE1  WQ_mod1.pdb #2/? UNL 1 C    3.745
+4pnz.cif #1/B PHE 357 CB   WQ_mod1.pdb #2/? UNL 1 C    3.747
+4pnz.cif #1/B PHE 357 CZ   WQ_mod1.pdb #2/? UNL 1 C    3.754
+4pnz.cif #1/B TYR 666 CZ   WQ_mod1.pdb #2/? UNL 1 C    3.785
+4pnz.cif #1/B PHE 357 CE1  WQ_mod1.pdb #2/? UNL 1 C    3.796
+4pnz.cif #1/B TYR 666 CZ   WQ_mod1.pdb #2/? UNL 1 C    3.814
+4pnz.cif #1/B PHE 357 CD1  WQ_mod1.pdb #2/? UNL 1 C    3.840
+4pnz.cif #1/B TYR 662 CZ   WQ_mod1.pdb #2/? UNL 1 C    3.872
+4pnz.cif #1/B PHE 357 CG   WQ_mod1.pdb #2/? UNL 1 C    3.883
+4pnz.cif #1/B PHE 357 CG   WQ_mod1.pdb #2/? UNL 1 C    3.893
+4pnz.cif #1/B PHE 357 CD1  WQ_mod1.pdb #2/? UNL 1 C    3.914
+4pnz.cif #1/B PHE 357 CD2  WQ_mod1.pdb #2/? UNL 1 C    3.915
+4pnz.cif #1/B TYR 662 CE2  WQ_mod1.pdb #2/? UNL 1 C    3.921
+4pnz.cif #1/B PHE 357 CB   WQ_mod1.pdb #2/? UNL 1 C    3.934
+4pnz.cif #1/B PHE 357 CZ   WQ_mod1.pdb #2/? UNL 1 C    3.946
+4pnz.cif #1/B TYR 662 CZ   WQ_mod1.pdb #2/? UNL 1 C    3.946
+4pnz.cif #1/B TYR 666 CD2  WQ_mod1.pdb #2/? UNL 1 C    3.980
+
+24 distances
+surface #1 & protein
+mlp #1 & protein
+Map values for surface "4pnz.cif_A SES surface": minimum -31.25, mean -5.002, maximum 23.37
+Map values for surface "4pnz.cif_B SES surface": minimum -31.27, mean -4.855, maximum 24.16

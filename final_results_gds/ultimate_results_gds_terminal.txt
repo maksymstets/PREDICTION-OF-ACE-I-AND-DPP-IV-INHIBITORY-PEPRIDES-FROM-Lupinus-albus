@@ -1,0 +1,17 @@
+base) maksym@maksym-HP-255-15-6-inch-G9-Notebook-PC:~/lupinus$ /home/maksym/anaconda3/bin/python /home/maksym/lupinus/ultimate_results_gds.py
+=== Step 1: merging ADMET-AI and ADMETLab3 results ===
+ADMET-AI peptides: 71 | ADMETLab3-only extra peptides: 72
+Combined ADMET table: 143 peptides total
+
+=== Step 2: loading docking results ===
+  WARNING [exhaustiveness_8]: 69 sequence(s) had multiple docking entries; keeping the most favorable affinity for each. Affected sequences: ['AF', 'AG', 'AH', 'AP', 'AV', 'AW', 'AY', 'DR', 'EG', 'EK', 'EV', 'EY', 'GF', 'GH', 'GI', 'GL', 'GPM', 'GW', 'GY', 'HL', 'HY', 'IA', 'IL', 'IP', 'IPA', 'IR', 'KA', 'KF', 'KG', 'KR', 'KY', 'MF', 'MG', 'MY', 'NF', 'NG', 'NY', 'PA', 'PG', 'PH', 'PL', 'PQ', 'PT', 'QG', 'QP', 'RA', 'RG', 'RL', 'SF', 'SY', 'TF', 'TQ', 'VE', 'VF', 'VG', 'VK', 'VM', 'VP', 'VR', 'VW', 'VY', 'WG', 'WL', 'WM', 'WV', 'YG', 'YL', 'YS', 'YV']
+  WARNING [exhaustiveness_32]: 69 sequence(s) had multiple docking entries; keeping the most favorable affinity for each. Affected sequences: ['AF', 'AG', 'AH', 'AP', 'AV', 'AW', 'AY', 'DR', 'EG', 'EK', 'EV', 'EY', 'GF', 'GH', 'GI', 'GL', 'GPM', 'GW', 'GY', 'HL', 'HY', 'IA', 'IL', 'IP', 'IPA', 'IR', 'KA', 'KF', 'KG', 'KR', 'KY', 'MF', 'MG', 'MY', 'NF', 'NG', 'NY', 'PA', 'PG', 'PH', 'PL', 'PQ', 'PT', 'QG', 'QP', 'RA', 'RG', 'RL', 'SF', 'SY', 'TF', 'TQ', 'VE', 'VF', 'VG', 'VK', 'VM', 'VP', 'VR', 'VW', 'VY', 'WG', 'WL', 'WM', 'WV', 'YG', 'YL', 'YS', 'YV']
+exhaustiveness_8  docking entries: 204
+exhaustiveness_32 docking entries: 204
+
+=== Step 3: merging docking results into combined table ===
+  62 exhaustiveness_8 docking peptide(s) not in the ADMET table - will be added as extra rows: ['AY', 'DA', 'DF', 'DG', 'DL', 'DN', 'DR', 'EF', 'EY', 'EYF', 'GY', 'HD', 'HE', 'HS', 'HT', 'HW', 'HY', 'IAY', 'IN', 'IY', 'KH', 'KS', 'KY', 'MY', 'NH', 'NK', 'NKL', 'NN', 'NR', 'NT', 'NV', 'NY', 'QD', 'QN', 'QSE', 'QY', 'RF', 'RH', 'RN', 'RY', 'SH', 'SY', 'TH', 'TKY', 'TN', 'TY', 'VEF', 'VRF', 'VSK', 'VW', 'VY', 'WF', 'WL', 'WM', 'WMY', 'WR', 'YF', 'YG', 'YNL', 'YPR', 'YS', 'YT']
+  62 exhaustiveness_32 docking peptide(s) not in the ADMET table - will be added as extra rows: ['AY', 'DA', 'DF', 'DG', 'DL', 'DN', 'DR', 'EF', 'EY', 'EYF', 'GY', 'HD', 'HE', 'HS', 'HT', 'HW', 'HY', 'IAY', 'IN', 'IY', 'KH', 'KS', 'KY', 'MY', 'NH', 'NK', 'NKL', 'NN', 'NR', 'NT', 'NV', 'NY', 'QD', 'QN', 'QSE', 'QY', 'RF', 'RH', 'RN', 'RY', 'SH', 'SY', 'TH', 'TKY', 'TN', 'TY', 'VEF', 'VRF', 'VSK', 'VW', 'VY', 'WF', 'WL', 'WM', 'WMY', 'WR', 'YF', 'YG', 'YNL', 'YPR', 'YS', 'YT']
+Added 62 extra rows for docking-only peptides. Combined table now has 205 peptides.
+
+Done. 205 peptides written to /home/maksym/lupinus/final_results_gds/ultimate_peptide_results_gds.csv

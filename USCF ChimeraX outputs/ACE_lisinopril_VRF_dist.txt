@@ -1,0 +1,64 @@
+import math
+
+models = {m.id: m for m in session.models}
+receptor = models[(1,)]   # 1o86
+peptide = models[(2,)]    # VRF_mod1.pdb
+
+pocket_residues = {
+    "S1":  [("ALA", 354), ("GLU", 384), ("TYR", 523)],
+    "S2":  [("GLN", 281), ("HIS", 353), ("LYS", 511), ("HIS", 513), ("TYR", 520)],
+    "S1'": [("GLN", 162)],
+}
+
+pep_atoms = peptide.atoms
+lpr_atoms = [a for a in receptor.atoms if a.residue.name == "LPR"]
+zn_atoms = [a for a in receptor.atoms if a.residue.name == "ZN"]
+
+def closest(res_atoms, target_atoms):
+    best = None
+    for ra in res_atoms:
+        for ta in target_atoms:
+            dx = ra.coord[0] - ta.coord[0]
+            dy = ra.coord[1] - ta.coord[1]
+            dz = ra.coord[2] - ta.coord[2]
+            d = math.sqrt(dx*dx + dy*dy + dz*dz)
+            if best is None or d < best[0]:
+                best = (d, ra, ta)
+    return best
+
+print(f"{'Pocket':6s} {'Residue':10s} {'VRF dist (Å)':14s} {'LPR dist (Å)':14s}")
+
+for pocket, residues in pocket_residues.items():
+    for resname, resnum in residues:
+        res_atoms = [a for a in receptor.atoms
+                     if a.residue.number == resnum and a.residue.chain_id == 'A']
+        if not res_atoms:
+            print(f"{pocket:6s} {resname}{resnum}: not found in structure")
+            continue
+        vrf_best = closest(res_atoms, pep_atoms)
+        lpr_best = closest(res_atoms, lpr_atoms) if lpr_atoms else None
+        vrf_str = f"{vrf_best[0]:.2f}" if vrf_best else "n/a"
+        lpr_str = f"{lpr_best[0]:.2f}" if lpr_best else "n/a"
+        print(f"{pocket:6s} {resname}{resnum:<6d} {vrf_str:14s} {lpr_str:14s}")
+
+# Zinc cofactor - reported separately, not as part of a named pocket
+if zn_atoms:
+    vrf_zn = closest(zn_atoms, pep_atoms)
+    lpr_zn = closest(zn_atoms, lpr_atoms) if lpr_atoms else None
+    vrf_zn_str = f"{vrf_zn[0]:.2f}" if vrf_zn else "n/a"
+    lpr_zn_str = f"{lpr_zn[0]:.2f}" if lpr_zn else "n/a"
+    print(f"{'Zn':6s} {'cofactor':10s} {vrf_zn_str:14s} {lpr_zn_str:14s}")
+else:
+    print("Zn: not found in structure")
+    
+Pocket Residue    VRF dist (Å)   LPR dist (Å)  
+S1     ALA354    3.35           2.92          
+S1     GLU384    3.62           2.70          
+S1     TYR523    2.33           2.77          
+S2     GLN281    2.99           3.22          
+S2     HIS353    3.16           2.76          
+S2     LYS511    4.27           2.93          
+S2     HIS513    3.21           3.06          
+S2     TYR520    5.35           2.56          
+S1'    GLN162    2.65           3.45          
+Zn     cofactor   2.56           2.14     
