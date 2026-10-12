@@ -1,6 +1,8 @@
-This repo contains scripts for bulk BIOPEP digestion simulation, ADMET analysis via ADMETLab 3.0 and molecular docking via AutoDockVina.
+# This is a repository for scripts used for an article "IN SILICO PREDICTION OF ANTIDIABETIC AND ANTIHYPERTENSIVE PEPTIDES FROM LUPINUS ALBUS". The paper is under review at Biomedical Engineering and Technology. 
+The repository contains all scripts used for this research, including intermediate and final versions as well as raw data. 
 
-The results are under review at Biomedical Engineering and Technology. 
+
+
 
 ## Folders and files description
 
