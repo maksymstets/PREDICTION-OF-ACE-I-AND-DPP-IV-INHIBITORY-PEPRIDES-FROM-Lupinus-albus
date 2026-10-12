@@ -1,4 +1,5 @@
-# This is a repository for scripts used for an article "IN SILICO PREDICTION OF ANTIDIABETIC AND ANTIHYPERTENSIVE PEPTIDES FROM LUPINUS ALBUS". The paper is under review at Biomedical Engineering and Technology. 
+# This is a repository for scripts used for an article "IN SILICO PREDICTION OF ANTIDIABETIC AND ANTIHYPERTENSIVE PEPTIDES FROM LUPINUS ALBUS". 
+The paper is under review at Biomedical Engineering and Technology. 
 The repository contains all scripts used for this research, including intermediate and final versions as well as raw data. 
 
 
